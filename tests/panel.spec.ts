@@ -16,6 +16,6 @@ test('should render the grid when data is passed to the panel', async ({
 }) => {
   const ds = await readProvisionedDataSource({ fileName: 'datasources.yml' });
   await panelEditPage.datasource.set(ds.name);
-  await panelEditPage.setVisualization('Gp-Grid');
+  await panelEditPage.setVisualization('GP-Grid');
   await expect(page.getByTestId('gp-grid-panel').locator('.gp-grid-header-cell').first()).toBeVisible();
 });
