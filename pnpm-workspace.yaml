@@ -3,5 +3,5 @@ allowBuilds:
   '@swc/core': true
   protobufjs: false
 minimumReleaseAgeExclude:
-  - '@gp-grid/core@1.1.1'
-  - '@gp-grid/react@1.1.1'
+  - '@gp-grid/core@1.1.1 || 1.1.2'
+  - '@gp-grid/react@1.1.1 || 1.1.2'
