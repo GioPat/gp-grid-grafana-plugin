@@ -6,7 +6,7 @@ GP-Grid shows query results as a spreadsheet-like grid that stays responsive wit
 
 ## Requirements
 
-- Grafana 12.0.1 or later
+- Grafana 11.6.11+, 12.0.10+, 12.1.7+, 12.2.5+ or 12.3 and later
 
 ## Getting started
 
