@@ -5,3 +5,9 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - '@gp-grid/core@1.1.1 || 1.1.2'
   - '@gp-grid/react@1.1.1 || 1.1.2'
+overrides:
+  basic-ftp: ^6.2.1
+  dompurify: ^3.4.17
+  immutable: ^5.1.8
+  js-cookie: ^3.0.7
+  moment: 2.30.1

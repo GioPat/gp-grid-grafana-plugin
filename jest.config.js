@@ -18,5 +18,10 @@ module.exports = {
     '^@gp-grid/react$': path.join(gpGridReact, 'dist/index.js'),
     '^@gp-grid/core$': path.join(gpGridReact, '../core/dist/index.js'),
   },
+  // Newer @grafana/data dependencies (d3-color) ship ESM-only .mjs entries, which the scaffolded transform skips.
+  transform: {
+    ...base.transform,
+    '^.+\\.mjs$': base.transform['^.+\\.(t|j)sx?$'],
+  },
   transformIgnorePatterns: [nodeModulesToTransform([...grafanaESModules, '@gp-grid'])],
 };
