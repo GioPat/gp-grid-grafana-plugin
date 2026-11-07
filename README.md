@@ -1,4 +1,4 @@
-# GP-Grid Grafana panel
+# gp-grid Grafana panel
 
 A Grafana panel plugin that renders data frames with [gp-grid](https://github.com/GioPat/gp-grid). User documentation lives in [src/README.md](./src/README.md), which is also the page shown in the Grafana plugin catalog.
 
