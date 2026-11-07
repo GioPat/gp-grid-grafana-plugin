@@ -2,12 +2,15 @@ import React, { useMemo } from 'react';
 import { PanelProps } from '@grafana/data';
 import { useTheme2 } from '@grafana/ui';
 import { PanelDataErrorView } from '@grafana/runtime';
-import { Grid } from '@gp-grid/react';
-import '@gp-grid/react/dist/styles.css';
+import { css } from '@emotion/css';
+import { Grid, gridStyles } from '@gp-grid/react';
 import { GridOptions } from 'types';
 import { frameToGrid } from 'data/frameToGrid';
 
 interface Props extends PanelProps<GridOptions> {}
+
+// Grafana forbids global CSS imports; nesting the stylesheet under a class scopes it to the panel.
+const gridClass = css(gridStyles);
 
 export const GridPanel: React.FC<Props> = ({ options, data, width, height, fieldConfig, id, timeZone }) => {
   const theme = useTheme2();
@@ -22,7 +25,7 @@ export const GridPanel: React.FC<Props> = ({ options, data, width, height, field
   }
 
   return (
-    <div data-testid="gp-grid-panel" style={{ width, height }}>
+    <div className={gridClass} data-testid="gp-grid-panel" style={{ width, height }}>
       <Grid
         columns={grid.columns}
         dataSource={grid.dataSource}

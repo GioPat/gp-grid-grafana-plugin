@@ -19,8 +19,8 @@ importers:
         specifier: 11.10.6
         version: 11.10.6(supports-color@8.1.1)
       '@gp-grid/react':
-        specifier: ^1.1.2
-        version: 1.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.2.0
+        version: 1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@grafana/data':
         specifier: 12.4.14
         version: 12.4.14(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.2)
@@ -513,11 +513,11 @@ packages:
   '@formatjs/intl-localematcher@0.6.2':
     resolution: {integrity: sha512-XOMO2Hupl0wdd172Y06h6kLpBz6Dv+J4okPLl4LPtzbr8f66WbIoy4ev98EBuZ6ZK4h5ydTN6XneT4QVpD7cdA==}
 
-  '@gp-grid/core@1.1.2':
-    resolution: {integrity: sha512-4JG+LxnUJNKF/RHO/hR40HTf3+BipNJcpBtdiamctYbYnx+1yFlBWjg/ffC3XFzIoyo6QubhHnrBUmOp8a3q9Q==}
+  '@gp-grid/core@1.2.0':
+    resolution: {integrity: sha512-K0D5N9rFE73veUrHCH42hHt7oVW0OUlkC618rXJNnfApa85+scXi1V2cEuqSgus2mY/C7FMjMPQo8GY6z1TRZw==}
 
-  '@gp-grid/react@1.1.2':
-    resolution: {integrity: sha512-g1hGQp283tHhK4Cu96qu6rXybYP0dyNPkk6XHPWlaBcAzQc8JvG2vfyvMI0cUlFJ0U4zKTRsOB67QodJk5+CQg==}
+  '@gp-grid/react@1.2.0':
+    resolution: {integrity: sha512-c3qCxY62ydBeVpen7zeYVi/5u+405WkXnAr52A/kyh+lqks41/XaPETuQV2OwcKmDYBDSpx3YfQPH/CDqwU1jg==}
     peerDependencies:
       react: ^18.0.0 || ^19.0.0
       react-dom: ^18.0.0 || ^19.0.0
@@ -5384,11 +5384,11 @@ snapshots:
     dependencies:
       tslib: 2.9.1
 
-  '@gp-grid/core@1.1.2': {}
+  '@gp-grid/core@1.2.0': {}
 
-  '@gp-grid/react@1.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@gp-grid/react@1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@gp-grid/core': 1.1.2
+      '@gp-grid/core': 1.2.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
