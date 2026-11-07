@@ -29,7 +29,20 @@
         "url": "https://github.com/GioPat/gp-grid-grafana-plugin/blob/main/LICENSE"
       }
     ],
-    "screenshots": [],
+    "screenshots": [
+      {
+        "name": "Overview",
+        "path": "img/screenshot_overview.png"
+      },
+      {
+        "name": "Date and time filter",
+        "path": "img/screenshot_datetime_filter.png"
+      },
+      {
+        "name": "Pin column override",
+        "path": "img/screenshot_pin_column_override.png"
+      }
+    ],
     "version": "%VERSION%",
     "updated": "%TODAY%"
   },

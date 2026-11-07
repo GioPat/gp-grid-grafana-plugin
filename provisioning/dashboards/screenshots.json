@@ -1,0 +1,216 @@
+{
+  "title": "GP-Grid screenshots",
+  "schemaVersion": 41,
+  "time": {
+    "from": "2026-11-07T09:00:00.000Z",
+    "to": "2026-11-07T11:00:00.000Z"
+  },
+  "panels": [
+    {
+      "id": 1,
+      "type": "fulmion-gpgrid-panel",
+      "title": "Service health",
+      "datasource": {
+        "type": "grafana-testdata-datasource",
+        "uid": "trlxrdZVk"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 24,
+        "h": 14
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": {
+            "type": "grafana-testdata-datasource",
+            "uid": "trlxrdZVk"
+          },
+          "scenarioId": "csv_content",
+          "csvContent": "time,service,region,requests,latency_p95,error_rate,cpu,healthy\n1793955600000,checkout,eu-west-1,858.3,78.6,2.93,17.9,true\n1793955900000,payments,eu-west-1,1341.8,165.0,0.26,53.1,true\n1793956200000,search,us-east-1,205.5,192.3,0.31,19.3,true\n1793956500000,catalog,us-east-1,1087.9,350.4,0.56,30.1,true\n1793956800000,auth,ap-south-1,1550.5,399.0,2.6,44.1,false\n1793957100000,inventory,eu-central-1,2345.9,36.7,3.86,35.5,false\n1793957400000,notifications,us-west-2,448.9,65.4,1.39,78.1,true\n1793957700000,recommendations,eu-west-1,532.1,251.8,2.88,42.2,true\n1793958000000,checkout,eu-west-1,1368.9,43.2,0.27,28.7,true\n1793958300000,payments,eu-west-1,1671.3,189.9,1.41,59.4,true\n1793958600000,search,us-east-1,1153.3,138.5,3.57,68.6,false\n1793958900000,catalog,us-east-1,676.5,248.9,2.36,82.9,true\n1793959200000,auth,ap-south-1,1783.1,133.8,4.41,21.6,false\n1793959500000,inventory,eu-central-1,1073.3,322.4,0.68,51.6,true\n1793959800000,notifications,us-west-2,209.4,286.6,3.44,58.4,true\n1793960100000,recommendations,eu-west-1,2116.1,144.1,3.13,60.1,true\n1793960400000,checkout,eu-west-1,1442.2,201.4,3.78,88.5,false\n1793960700000,payments,eu-west-1,1200.9,285.0,0.27,68.8,true\n1793961000000,search,us-east-1,1595.5,417.2,3.7,35.1,false\n1793961300000,catalog,us-east-1,999.6,286.8,0.1,49.4,true\n1793961600000,auth,ap-south-1,503.2,65.1,0.27,74.2,true\n1793961900000,inventory,eu-central-1,414.9,117.5,1.76,82.6,true\n1793962200000,notifications,us-west-2,303.7,198.6,2.47,83.6,true\n1793962500000,recommendations,eu-west-1,1988.0,365.3,1.25,45.6,true"
+        }
+      ],
+      "options": {
+        "frameIndex": 0,
+        "rowHeight": 32,
+        "sortable": true,
+        "filterable": true
+      },
+      "fieldConfig": {
+        "defaults": {
+          "custom": {
+            "width": 150,
+            "pinned": "none",
+            "hidden": false
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "time"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Time"
+              },
+              {
+                "id": "unit",
+                "value": "dateTimeAsLocal"
+              },
+              {
+                "id": "custom.width",
+                "value": 190
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "service"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Service"
+              },
+              {
+                "id": "custom.pinned",
+                "value": "start"
+              },
+              {
+                "id": "custom.width",
+                "value": 170
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "region"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Region"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "requests"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Requests"
+              },
+              {
+                "id": "unit",
+                "value": "reqps"
+              },
+              {
+                "id": "decimals",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "latency_p95"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Latency p95"
+              },
+              {
+                "id": "unit",
+                "value": "ms"
+              },
+              {
+                "id": "decimals",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "error_rate"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Error rate"
+              },
+              {
+                "id": "unit",
+                "value": "percent"
+              },
+              {
+                "id": "decimals",
+                "value": 2
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "cpu"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "CPU"
+              },
+              {
+                "id": "unit",
+                "value": "percent"
+              },
+              {
+                "id": "decimals",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "healthy"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Healthy"
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "type": "value",
+                    "options": {
+                      "true": {
+                        "text": "\u2714 OK",
+                        "index": 0
+                      },
+                      "false": {
+                        "text": "\u2716 Degraded",
+                        "index": 1
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "uid": "gpgrid-screenshots"
+}
