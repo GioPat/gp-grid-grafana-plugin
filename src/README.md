@@ -1,10 +1,10 @@
-# GP-Grid
+# gp-grid
 
 A fast, virtualized data grid panel for Grafana, built on [gp-grid](https://github.com/GioPat/gp-grid).
 
-GP-Grid shows query results as a spreadsheet-like grid that stays responsive with large result sets. Cells are read straight from the Grafana data frame without copying rows, and values are formatted with Grafana's units, decimals and value mappings.
+gp-grid shows query results as a spreadsheet-like grid that stays responsive with large result sets. Cells are read straight from the Grafana data frame without copying rows, and values are formatted with Grafana's units, decimals and value mappings.
 
-![GP-Grid overview](https://raw.githubusercontent.com/GioPat/gp-grid-grafana-plugin/master/src/img/screenshot_overview.png)
+![gp-grid overview](https://raw.githubusercontent.com/GioPat/gp-grid-grafana-plugin/master/src/img/screenshot_overview.png)
 
 ## Requirements
 
@@ -12,7 +12,7 @@ GP-Grid shows query results as a spreadsheet-like grid that stays responsive wit
 
 ## Getting started
 
-1. Add a new visualization to a dashboard and select **GP-Grid**.
+1. Add a new visualization to a dashboard and select **gp-grid**.
 2. Pick any data source query that returns a table or time series.
 3. If the query returns several data frames, choose which one to display with **Frame index**.
 
