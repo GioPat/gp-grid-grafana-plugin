@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "GP-Grid",
+  "id": "fulmion-gpgrid-panel",
+  "info": {
+    "keywords": ["panel", "grid", "table"],
+    "description": "Fast, virtualized data grid built on gp-grid",
+    "author": {
+      "name": "Giovanni Patruno",
+      "email": "giovanni.patruno@outlook.com",
+      "url": "https://github.com/GioPat"
+    },
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Source",
+        "url": "https://github.com/GioPat/gp-grid-grafana-plugin"
+      },
+      {
+        "name": "Issues",
+        "url": "https://github.com/GioPat/gp-grid-grafana-plugin/issues"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/GioPat/gp-grid-grafana-plugin/blob/main/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=12.0.1",
+    "plugins": []
+  }
+}
