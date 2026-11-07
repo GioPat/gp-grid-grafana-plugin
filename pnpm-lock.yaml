@@ -22,8 +22,8 @@ importers:
         specifier: ^1.2.0
         version: 1.2.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@grafana/data':
-        specifier: 12.4.14
-        version: 12.4.14(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)
+        specifier: 13.1.9
+        version: 13.1.9(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)
       '@grafana/runtime':
         specifier: 12.4.14
         version: 12.4.14(@openfeature/web-sdk@1.10.0(@openfeature/core@1.12.0))(@react-spectrum/provider@3.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.31)(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)
@@ -532,6 +532,12 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
 
+  '@grafana/data@13.1.9':
+    resolution: {integrity: sha512-KkpfhP3BjraDp74M19Ru5KEMsefQDPzYtPnzblcvl2b4UA2zWcPhX3DHt8L5Ijlm/KJI0zL5G70auCUBDGYw9g==}
+    peerDependencies:
+      react: ^18.0.0
+      react-dom: ^18.0.0
+
   '@grafana/e2e-selectors@12.4.14':
     resolution: {integrity: sha512-iZnTF3IYI44qly9E5UiLWMJZHiutTh6KmMyoNfPPweFexOwtTAP7G4+zXJfTcZgJW34IIiO+A/RFJI8o2tGzRw==}
 
@@ -559,6 +565,11 @@ packages:
     peerDependencies:
       react: '>=18'
 
+  '@grafana/i18n@13.1.9':
+    resolution: {integrity: sha512-31YyYRK2m6wMBppJUpjaUziPboCmi8Qj83Yn9lOi8q9c8u+7DlUbdSXM4qWvqOtT9D5IwgIwOeiKT9jliT3ZYQ==}
+    peerDependencies:
+      react: '>=18'
+
   '@grafana/plugin-e2e@3.15.4':
     resolution: {integrity: sha512-NC/AA3lajw6OLvi26TMSOkkaOl8uP+Ax5eiRmraZdUbaDKF0FLxBwuKz2qgYCbK7PrWuDoIHrBJ3n1VMGmyjMw==}
     engines: {node: '>=20'}
@@ -583,6 +594,9 @@ packages:
 
   '@grafana/schema@12.4.14':
     resolution: {integrity: sha512-cwVv3fdkFeKtBGFv+tTKuq+I+qmlyfDAeZxsAuZG+eraPGtsSRfNCAjfVpEv+GKHXKVgaOD7Lf5A/wDmK25krw==}
+
+  '@grafana/schema@13.1.9':
+    resolution: {integrity: sha512-i0YZCqe6B+YMQ2EpFGRPQH4x9tVtdejdWembJhroeVimLaUQ76TcdEda1rZ1ndzFS8MnrWB8W0Ario/bo6CdYQ==}
 
   '@grafana/sign-plugin@3.3.3':
     resolution: {integrity: sha512-bCdRRCYB8NccQbEnmDcLqZrODLP1R4nhYwOzYGtQMTh7xISf7ddj2HlpPN4DeX1aPhV9yCNxcCyLZm3N6zjATQ==}
@@ -2071,6 +2085,10 @@ packages:
     resolution: {integrity: sha512-cGmADo5M2PTi3ewJZ2lcE32eURd4JmHtQ5JwRIUcas5L1SXqufG9yPyjWp8fW0gRi7aZi9bgbZPFZO1eyZ+1CQ==}
     engines: {node: '>=12'}
 
+  d3-color@3.1.0:
+    resolution: {integrity: sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==}
+    engines: {node: '>=12'}
+
   d3-color@3.1.1:
     resolution: {integrity: sha512-lfab8x0Bj0UO7SNsY8dZSbNIA6ipbkE3X0NG9nqjCu6CfCHZseuDnOSJY7hidKrjpP++i1M2qT+FlAdPKYRilA==}
     engines: {node: '>=12'}
@@ -2124,10 +2142,6 @@ packages:
     resolution: {integrity: sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==}
     engines: {node: '>=12'}
 
-  d3-interpolate@3.0.2:
-    resolution: {integrity: sha512-IRzGU62DtxhvsnSTWMQIdnoZ6gA+BCWwBon1EJI6SjoN595799b6z/QRBzXfFhE8iupUPp3042yBNo0STPqnzQ==}
-    engines: {node: '>=12'}
-
   d3-path@3.1.1:
     resolution: {integrity: sha512-jsbgV8zIT38ReB9O7X7gcLndTQRONSqNNd+oGIaTBdUug4r5jFmp0N6RY9R5GWbdUDucn0qoTGyfjapT4tDhcg==}
     engines: {node: '>=12'}
@@ -2146,10 +2160,6 @@ packages:
 
   d3-scale-chromatic@3.1.0:
     resolution: {integrity: sha512-A3s5PWiZ9YCXFye1o246KoscMWqf8BsD9eRiJ3He7C9OBaxKhAd5TFCdEx/7VbKtxxTsu//1mMJFrEt572cEyQ==}
-    engines: {node: '>=12'}
-
-  d3-scale-chromatic@3.1.1:
-    resolution: {integrity: sha512-lA5gfN2yMvmChubmptnDiBfeGpHD7Yb1EbvCz0TZE0WHXhyR6W2allPuhKtzV5ILQRqeOdefF0qYtERReLUBDg==}
     engines: {node: '>=12'}
 
   d3-scale@4.0.3:
@@ -3966,6 +3976,22 @@ packages:
       typescript:
         optional: true
 
+  react-i18next@16.6.6:
+    resolution: {integrity: sha512-ZgL2HUoW34UKUkOV7uSQFE1CDnRPD+tCR3ywSuWH7u2iapnz86U8Bi3Vrs620qNDzCf1F47NxglCEkchCTDOHw==}
+    peerDependencies:
+      i18next: '>= 25.10.9'
+      react: '>= 16.8.0'
+      react-dom: '*'
+      react-native: '*'
+      typescript: ^5 || ^6
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+      typescript:
+        optional: true
+
   react-immutable-proptypes@2.2.0:
     resolution: {integrity: sha512-Vf4gBsePlwdGvSZoLSBfd4HAP93HDauMY4fDjXhreg/vg6F3Fj/MXDNyTbltPC/xZKmZc+cjLu3598DdYK6sgQ==}
     peerDependencies:
@@ -5454,6 +5480,43 @@ snapshots:
       - supports-color
       - typescript
 
+  '@grafana/data@13.1.9(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)':
+    dependencies:
+      '@braintree/sanitize-url': 7.0.1
+      '@grafana/i18n': 13.1.9(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)
+      '@grafana/schema': 13.1.9
+      '@leeoniya/ufuzzy': 1.0.19
+      '@types/d3-interpolate': 3.0.4
+      '@types/string-hash': 1.1.3
+      '@types/systemjs': 6.15.3
+      d3-interpolate: 3.0.1
+      d3-scale-chromatic: 3.1.0
+      date-fns: 4.1.0
+      dompurify: 3.4.17
+      eventemitter3: 5.0.1
+      history: 4.10.1
+      lodash: 4.18.1
+      marked: 16.3.0
+      marked-mangle: 1.1.12(marked@16.3.0)
+      moment: 2.30.1
+      moment-timezone: 0.5.47
+      ol: 10.7.0
+      papaparse: 5.5.3
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-use: 17.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      rxjs: 7.8.2
+      string-hash: 1.1.3
+      tinycolor2: 1.6.0
+      uplot: 1.6.32
+      xss: 1.0.17
+      zod: 4.6.7
+    transitivePeerDependencies:
+      - eslint
+      - react-native
+      - supports-color
+      - typescript
+
   '@grafana/e2e-selectors@12.4.14':
     dependencies:
       semver: 7.8.6
@@ -5494,6 +5557,24 @@ snapshots:
       micro-memoize: 4.2.0
       react: 18.3.1
       react-i18next: 15.7.4(i18next@25.10.10(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
+    transitivePeerDependencies:
+      - eslint
+      - react-dom
+      - react-native
+      - supports-color
+      - typescript
+
+  '@grafana/i18n@13.1.9(eslint@9.39.5(supports-color@8.1.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(supports-color@8.1.1)(typescript@5.9.3)':
+    dependencies:
+      '@formatjs/intl-durationformat': 0.7.6
+      '@typescript-eslint/utils': 8.72.1(eslint@9.39.5(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)
+      fast-deep-equal: 3.1.3
+      i18next: 25.10.10(typescript@5.9.3)
+      i18next-browser-languagedetector: 8.3.0
+      i18next-pseudo: 2.2.1
+      micro-memoize: 4.2.0
+      react: 18.3.1
+      react-i18next: 16.6.6(i18next@25.10.10(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
     transitivePeerDependencies:
       - eslint
       - react-dom
@@ -5545,6 +5626,8 @@ snapshots:
   '@grafana/schema@12.4.14':
     dependencies:
       tslib: 2.8.1
+
+  '@grafana/schema@13.1.9': {}
 
   '@grafana/sign-plugin@3.3.3(supports-color@8.1.1)':
     dependencies:
@@ -6086,7 +6169,7 @@ snapshots:
 
   '@rc-component/overflow@1.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.10
       '@rc-component/resize-observer': 1.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@rc-component/util': 1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       clsx: 2.1.1
@@ -7325,13 +7408,15 @@ snapshots:
     dependencies:
       d3-dispatch: 3.0.2
       d3-drag: 3.0.1
-      d3-interpolate: 3.0.2
+      d3-interpolate: 3.0.1
       d3-selection: 3.0.1
       d3-transition: 3.0.2(d3-selection@3.0.1)
 
   d3-chord@3.0.2:
     dependencies:
       d3-path: 3.1.1
+
+  d3-color@3.1.0: {}
 
   d3-color@3.1.1: {}
 
@@ -7378,11 +7463,7 @@ snapshots:
 
   d3-interpolate@3.0.1:
     dependencies:
-      d3-color: 3.1.1
-
-  d3-interpolate@3.0.2:
-    dependencies:
-      d3-color: 3.1.1
+      d3-color: 3.1.0
 
   d3-path@3.1.1: {}
 
@@ -7394,20 +7475,14 @@ snapshots:
 
   d3-scale-chromatic@3.1.0:
     dependencies:
-      d3-color: 3.1.1
-      d3-interpolate: 3.0.2
-
-  d3-scale-chromatic@3.1.1:
-    dependencies:
-      d3-color: 3.1.1
-      d3-interpolate: 3.0.2
-      d3-scale: 4.0.3
+      d3-color: 3.1.0
+      d3-interpolate: 3.0.1
 
   d3-scale@4.0.3:
     dependencies:
       d3-array: 3.2.5
       d3-format: 3.1.3
-      d3-interpolate: 3.0.2
+      d3-interpolate: 3.0.1
       d3-time: 3.1.1
       d3-time-format: 4.1.1
 
@@ -7432,7 +7507,7 @@ snapshots:
       d3-color: 3.1.1
       d3-dispatch: 3.0.2
       d3-ease: 3.0.2
-      d3-interpolate: 3.0.2
+      d3-interpolate: 3.0.1
       d3-selection: 3.0.1
       d3-timer: 3.0.2
 
@@ -7440,7 +7515,7 @@ snapshots:
     dependencies:
       d3-dispatch: 3.0.2
       d3-drag: 3.0.1
-      d3-interpolate: 3.0.2
+      d3-interpolate: 3.0.1
       d3-selection: 3.0.1
       d3-transition: 3.0.2(d3-selection@3.0.1)
 
@@ -7462,13 +7537,13 @@ snapshots:
       d3-format: 3.1.3
       d3-geo: 3.1.2
       d3-hierarchy: 3.1.3
-      d3-interpolate: 3.0.2
+      d3-interpolate: 3.0.1
       d3-path: 3.1.1
       d3-polygon: 3.0.2
       d3-quadtree: 3.0.2
       d3-random: 3.0.2
       d3-scale: 4.0.3
-      d3-scale-chromatic: 3.1.1
+      d3-scale-chromatic: 3.1.0
       d3-selection: 3.0.1
       d3-shape: 3.2.1
       d3-time: 3.1.1
@@ -8179,7 +8254,7 @@ snapshots:
 
   history@4.10.1:
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.10
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.3.3
@@ -8249,7 +8324,7 @@ snapshots:
 
   i18next@19.9.2:
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.10
 
   i18next@25.10.10(typescript@5.9.3):
     dependencies:
@@ -9440,7 +9515,7 @@ snapshots:
 
   rc-resize-observer@1.4.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.10
       classnames: 2.5.1
       rc-util: 5.44.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -9449,7 +9524,7 @@ snapshots:
 
   rc-util@5.44.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.10
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-is: 18.3.1
@@ -9540,6 +9615,17 @@ snapshots:
       html-parse-stringify: 3.1.0
       i18next: 25.10.10(typescript@5.9.3)
       react: 18.3.1
+    optionalDependencies:
+      react-dom: 18.3.1(react@18.3.1)
+      typescript: 5.9.3
+
+  react-i18next@16.6.6(i18next@25.10.10(typescript@5.9.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3):
+    dependencies:
+      '@babel/runtime': 7.29.10
+      html-parse-stringify: 3.1.0
+      i18next: 25.10.10(typescript@5.9.3)
+      react: 18.3.1
+      use-sync-external-store: 1.7.0(react@18.3.1)
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
       typescript: 5.9.3
@@ -9776,7 +9862,7 @@ snapshots:
 
   rtl-css-js@1.16.1:
     dependencies:
-      '@babel/runtime': 7.29.13
+      '@babel/runtime': 7.29.10
 
   rw@1.3.3: {}
 
