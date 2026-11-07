@@ -3,9 +3,9 @@ import { PanelProps } from '@grafana/data';
 import { useTheme2 } from '@grafana/ui';
 import { PanelDataErrorView } from '@grafana/runtime';
 import { Grid } from '@gp-grid/react';
-import '@gp-grid/react/dist/styles.css';
 import { GridOptions } from 'types';
 import { frameToGrid } from 'data/frameToGrid';
+import { gridClass } from 'styles/gridClass';
 
 interface Props extends PanelProps<GridOptions> {}
 
@@ -22,7 +22,7 @@ export const GridPanel: React.FC<Props> = ({ options, data, width, height, field
   }
 
   return (
-    <div data-testid="gp-grid-panel" style={{ width, height }}>
+    <div className={gridClass} data-testid="gp-grid-panel" style={{ width, height }}>
       <Grid
         columns={grid.columns}
         dataSource={grid.dataSource}
